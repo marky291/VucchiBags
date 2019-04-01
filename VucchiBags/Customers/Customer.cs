@@ -8,6 +8,7 @@ namespace VucchiBags.Customers
 {
     enum RatingType {  Blacklisted, regular, dodgey }
 
+    [Serializable]
     class Customer : Entity, ICustomer
     {
         public RatingType Rating { get; set; }

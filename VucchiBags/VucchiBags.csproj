@@ -49,6 +49,8 @@
     <Compile Include="Customers\Customer.cs" />
     <Compile Include="Customers\ICustomer.cs" />
     <Compile Include="Entity.cs" />
+    <Compile Include="Rentals\Rental.cs" />
+    <Compile Include="Storage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rentals\IRental.cs" />

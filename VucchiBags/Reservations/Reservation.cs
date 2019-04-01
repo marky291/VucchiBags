@@ -8,6 +8,7 @@ using VucchiBags.Rentals;
 
 namespace VucchiBags.Reservations
 {
+    [Serializable]
     class Reservation : Entity
     {
         public ICustomer Customer { get; set; }

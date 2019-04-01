@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace VucchiBags
 {
+    [Serializable]
     abstract class Entity
     {
         /**
@@ -13,14 +14,14 @@ namespace VucchiBags
          * 
          * @var integer
          */
-        protected int ID { get; set; }
+        public int id { get; }
 
         /**
          * Construct the entity
          */
         public Entity()
         {
-            this.ID = this.GenerateIdentificationKey();
+            this.id = this.GenerateIdentificationKey();
         }
 
         /**

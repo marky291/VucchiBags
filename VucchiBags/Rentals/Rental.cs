@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace VucchiBags.Rentals
 {
+    [Serializable]
     class Rental : Entity
     {
     }

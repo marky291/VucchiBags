@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using VucchiBags.Reservations;
 using VucchiBags.Customers;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 
 namespace VucchiBags
 {
@@ -16,9 +18,11 @@ namespace VucchiBags
         [STAThread]
         static void Main()
         {
+            FileStorage storage = new FileStorage();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Form1());
+            //Application.Run(new Sample());
         }
     }
 }
