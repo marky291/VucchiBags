@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VucchiBags.Staffs
+namespace VucchiBags.Products
 {
-    class Staff : Entity
+    interface IProduct
     {
     }
 }

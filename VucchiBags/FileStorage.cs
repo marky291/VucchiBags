@@ -9,6 +9,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using VucchiBags.Customers;
 using VucchiBags.Rentals;
 using VucchiBags.Reservations;
+using VucchiBags.Products;
 
 namespace VucchiBags
 {
@@ -18,6 +19,7 @@ namespace VucchiBags
         public List<Rental> Rentals = new List<Rental>();
         public List<Customer> Customers = new List<Customer>();
         public List<Reservation> Reservations = new List<Reservation>();
+        public List<Product> Products = new List<Product>();
 
         // construct == load on entry
         public FileStorage()
@@ -35,13 +37,13 @@ namespace VucchiBags
                 this.Customers = Stored.Customers;
                 this.Rentals = Stored.Rentals;
                 this.Reservations = Stored.Reservations;
+                this.Products = Stored.Products;
 
-                foreach(Customer customer in this.Customers)
-                {
-                    Console.WriteLine("Customer ID: " + customer.id);
-                }
-
+                // feedback to the user what is loaded.
                 Console.WriteLine($"Total Customers loaded {Stored.Customers.Count}");
+                Console.WriteLine($"Total Rentals loaded {Stored.Rentals.Count}");
+                Console.WriteLine($"Total Reservations loaded {Stored.Reservations.Count}");
+                Console.WriteLine($"Total Products loaded {Stored.Products.Count}");
             }
 
             fs.Close();

@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VucchiBags.Staffs
+namespace VucchiBags.Products
 {
-    interface IStaff
+    class Product : Entity, IProduct
     {
+        //
     }
 }
