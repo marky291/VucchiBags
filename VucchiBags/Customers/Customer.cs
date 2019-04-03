@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace VucchiBags.Customers
 {
-    enum RatingType {  Blacklisted, Regular, Dodgey }
+    enum CustomerRating {  Blacklisted, Regular, Dodgey }
 
     [Serializable]
     class Customer : Entity
     {
-        public RatingType Rating { get; set; }
+        public CustomerRating Rating { get; set; }
 
         public string Forename { get; set; }
 

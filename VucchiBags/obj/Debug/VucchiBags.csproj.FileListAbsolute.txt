@@ -16,3 +16,7 @@ C:\Users\K00233238\Desktop\VucchiBags\VucchiBags\obj\Debug\VucchiBags.csproj.Gen
 C:\Users\K00233238\Desktop\VucchiBags\VucchiBags\obj\Debug\VucchiBags.csproj.CoreCompileInputs.cache
 C:\Users\K00233238\Desktop\VucchiBags\VucchiBags\obj\Debug\VucchiBags.exe
 C:\Users\K00233238\Desktop\VucchiBags\VucchiBags\obj\Debug\VucchiBags.pdb
+C:\Users\K00233238\Desktop\VucchiBags\VucchiBags\bin\Debug\Bogus.dll
+C:\Users\K00233238\Desktop\VucchiBags\VucchiBags\bin\Debug\Bogus.pdb
+C:\Users\K00233238\Desktop\VucchiBags\VucchiBags\bin\Debug\Bogus.xml
+C:\Users\K00233238\Desktop\VucchiBags\VucchiBags\obj\Debug\VucchiBags.csproj.CopyComplete
