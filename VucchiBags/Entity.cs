@@ -14,14 +14,14 @@ namespace VucchiBags
          * 
          * @var integer
          */
-        public int id { get; }
+        public int Id { get; }
 
         /**
          * Construct the entity
          */
         public Entity()
         {
-            this.id = this.GenerateIdentificationKey();
+            this.Id = this.GenerateIdentificationKey();
         }
 
         /**

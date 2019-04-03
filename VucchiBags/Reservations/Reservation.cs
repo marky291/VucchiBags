@@ -15,7 +15,7 @@ namespace VucchiBags.Reservations
 
         public int RentalID { get; set; }
 
-        public DateTime ETA { get; set; }
+        public DateTime CollectionDate { get; set; }
 
         public DateTime DueDate { get; set; }
 

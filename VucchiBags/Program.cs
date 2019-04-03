@@ -18,13 +18,15 @@ namespace VucchiBags
         [STAThread]
         static void Main()
         {
+            // create the storage container.
             FileStorage storage = new FileStorage();
 
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Sample());
 
-            Customer customer = new FakeCustomer();
+            Application.SetCompatibleTextRenderingDefault(false);
+
+            // run the dashboard with the storage.
+            // Application.Run(new Dashboard(storage));
         }
     }
 }

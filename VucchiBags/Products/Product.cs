@@ -24,7 +24,5 @@ namespace VucchiBags.Products
         public string LongDescription { get; set; }
 
         public decimal Value { get; set; }
-
-        public string ImageName { get; set; }
     }
 }
