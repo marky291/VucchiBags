@@ -17,7 +17,7 @@ namespace VucchiBags.Reservations
 
         public DateTime ETA { get; set; }
 
-        public DateTime ETT { get; set; }
+        public DateTime DueDate { get; set; }
 
         public decimal DailyRate { get; set; }
 

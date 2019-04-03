@@ -20,3 +20,16 @@ C:\Users\K00233238\Desktop\VucchiBags\VucchiBags\bin\Debug\Bogus.dll
 C:\Users\K00233238\Desktop\VucchiBags\VucchiBags\bin\Debug\Bogus.pdb
 C:\Users\K00233238\Desktop\VucchiBags\VucchiBags\bin\Debug\Bogus.xml
 C:\Users\K00233238\Desktop\VucchiBags\VucchiBags\obj\Debug\VucchiBags.csproj.CopyComplete
+U:\VucchiBags\VucchiBags\bin\Debug\VucchiBags.exe.config
+U:\VucchiBags\VucchiBags\bin\Debug\VucchiBags.exe
+U:\VucchiBags\VucchiBags\bin\Debug\VucchiBags.pdb
+U:\VucchiBags\VucchiBags\bin\Debug\Bogus.dll
+U:\VucchiBags\VucchiBags\bin\Debug\Bogus.pdb
+U:\VucchiBags\VucchiBags\bin\Debug\Bogus.xml
+U:\VucchiBags\VucchiBags\obj\Debug\VucchiBags.csprojAssemblyReference.cache
+U:\VucchiBags\VucchiBags\obj\Debug\VucchiBags.Properties.Resources.resources
+U:\VucchiBags\VucchiBags\obj\Debug\VucchiBags.csproj.GenerateResource.cache
+U:\VucchiBags\VucchiBags\obj\Debug\VucchiBags.csproj.CoreCompileInputs.cache
+U:\VucchiBags\VucchiBags\obj\Debug\VucchiBags.csproj.CopyComplete
+U:\VucchiBags\VucchiBags\obj\Debug\VucchiBags.exe
+U:\VucchiBags\VucchiBags\obj\Debug\VucchiBags.pdb

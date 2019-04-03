@@ -18,7 +18,6 @@ namespace VucchiBags.Customers
             RuleFor(o => o.Birthdate, f => f.Date.Past());
             RuleFor(o => o.PhoneNumber, f => f.Phone.PhoneNumber());
             RuleFor(o => o.PassportNumber, f => f.Name.Random.Replace("##########"));
-            //RuleFor(o => o.Rating, f => f.Random.Enum<T>());
         }
     }
 }

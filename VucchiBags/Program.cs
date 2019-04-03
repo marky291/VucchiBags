@@ -23,6 +23,8 @@ namespace VucchiBags
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Sample());
+
+            Customer customer = new FakeCustomer();
         }
     }
 }
