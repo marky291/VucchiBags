@@ -26,7 +26,7 @@ namespace VucchiBags
             Application.SetCompatibleTextRenderingDefault(false);
 
             // run the dashboard with the storage.
-            // Application.Run(new Dashboard(storage));
+            Application.Run(new Dashboard(storage));
         }
     }
 }
