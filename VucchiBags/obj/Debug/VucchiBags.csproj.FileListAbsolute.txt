@@ -7,3 +7,12 @@
 \\mac\Home\Documents\College\KSDEM_8_Y2 - Applications Development\Project\VucchiBags\obj\Debug\VucchiBags.csproj.CoreCompileInputs.cache
 \\mac\Home\Documents\College\KSDEM_8_Y2 - Applications Development\Project\VucchiBags\obj\Debug\VucchiBags.exe
 \\mac\Home\Documents\College\KSDEM_8_Y2 - Applications Development\Project\VucchiBags\obj\Debug\VucchiBags.pdb
+C:\Users\K00233238\Desktop\VucchiBags\VucchiBags\bin\Debug\VucchiBags.exe.config
+C:\Users\K00233238\Desktop\VucchiBags\VucchiBags\bin\Debug\VucchiBags.exe
+C:\Users\K00233238\Desktop\VucchiBags\VucchiBags\bin\Debug\VucchiBags.pdb
+C:\Users\K00233238\Desktop\VucchiBags\VucchiBags\obj\Debug\VucchiBags.csprojAssemblyReference.cache
+C:\Users\K00233238\Desktop\VucchiBags\VucchiBags\obj\Debug\VucchiBags.Properties.Resources.resources
+C:\Users\K00233238\Desktop\VucchiBags\VucchiBags\obj\Debug\VucchiBags.csproj.GenerateResource.cache
+C:\Users\K00233238\Desktop\VucchiBags\VucchiBags\obj\Debug\VucchiBags.csproj.CoreCompileInputs.cache
+C:\Users\K00233238\Desktop\VucchiBags\VucchiBags\obj\Debug\VucchiBags.exe
+C:\Users\K00233238\Desktop\VucchiBags\VucchiBags\obj\Debug\VucchiBags.pdb

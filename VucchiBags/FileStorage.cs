@@ -16,6 +16,8 @@ namespace VucchiBags
     [Serializable]
     class FileStorage
     {
+        const string FILENAME = "storage.dat";
+
         public List<Rental> Rentals = new List<Rental>();
         public List<Customer> Customers = new List<Customer>();
         public List<Reservation> Reservations = new List<Reservation>();
@@ -24,7 +26,7 @@ namespace VucchiBags
         // construct == load on entry
         public FileStorage()
         {
-            FileStream fs = new FileStream("storage.dat", FileMode.Open);
+            FileStream fs = new FileStream(FILENAME, FileMode.Open);
 
             BinaryFormatter formatter = new BinaryFormatter();
 
@@ -33,6 +35,8 @@ namespace VucchiBags
                 // deserialize the stored data for reading back to object.
                 FileStorage Stored = (FileStorage)formatter.Deserialize(fs);
 
+                Console.WriteLine($"Succesfully deserialized object from {FILENAME}!");
+
                 // get the stored data back to class.
                 this.Customers = Stored.Customers;
                 this.Rentals = Stored.Rentals;
@@ -40,10 +44,15 @@ namespace VucchiBags
                 this.Products = Stored.Products;
 
                 // feedback to the user what is loaded.
-                Console.WriteLine($"Total Customers loaded {Stored.Customers.Count}");
-                Console.WriteLine($"Total Rentals loaded {Stored.Rentals.Count}");
-                Console.WriteLine($"Total Reservations loaded {Stored.Reservations.Count}");
-                Console.WriteLine($"Total Products loaded {Stored.Products.Count}");
+                Console.WriteLine($"[Loaded] " +
+                    $"Customers: {Stored.Customers.Count}, " +
+                    $"Rentals: {Stored.Rentals.Count}, " +
+                    $"Reservations: {Stored.Reservations.Count}, " +
+                    $"Products: {Stored.Products.Count}"
+                );
+
+                // destroy the stored data since we already used it.
+                Stored = null;
             }
 
             fs.Close();
@@ -57,6 +66,8 @@ namespace VucchiBags
             BinaryFormatter formatter = new BinaryFormatter();
 
             formatter.Serialize(fs, this);
+
+            Console.WriteLine($"Succesfully serialized object to {FILENAME}!");
 
             fs.Close();
         }

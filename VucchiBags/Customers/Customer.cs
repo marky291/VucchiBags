@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace VucchiBags.Customers
 {
-    enum RatingType {  Blacklisted, regular, dodgey }
+    enum RatingType {  Blacklisted, Regular, Dodgey }
 
     [Serializable]
-    class Customer : Entity, ICustomer
+    class Customer : Entity
     {
         public RatingType Rating { get; set; }
 

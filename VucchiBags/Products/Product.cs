@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace VucchiBags.Products
 {
-    class Product : Entity, IProduct
+    [Serializable]
+    class Product : Entity
     {
         //
     }

@@ -11,15 +11,15 @@ namespace VucchiBags.Reservations
     [Serializable]
     class Reservation : Entity
     {
-        public ICustomer Customer { get; set; }
+        public int CustomerID { get; set; }
 
-        public decimal DailyRate { get; set; }
-
-        public IRental Rental { get; set; }
+        public int RentalID { get; set; }
 
         public DateTime ETA { get; set; }
 
         public DateTime ETT { get; set; }
+
+        public decimal DailyRate { get; set; }
 
         public decimal TotalPrice { get; set; }
 
