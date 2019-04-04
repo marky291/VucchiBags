@@ -10,12 +10,14 @@ namespace VucchiBags.Products
 
     enum ProductCategory { Bag, Belts, Shoes }
 
+    enum ProductBrand { Nike, Addidas }
+
     [Serializable]
     class Product : Entity
     {
         public ProductCategory Category { get; set; }
 
-        public string Model { get; set; }
+        public ProductBrand Brand { get; set; }
 
         public ProductStatus Status { get; set; }
 

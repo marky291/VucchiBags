@@ -52,6 +52,7 @@
             this.ReservationButton.TabIndex = 0;
             this.ReservationButton.Text = "Reservation";
             this.ReservationButton.UseVisualStyleBackColor = true;
+            this.ReservationButton.Click += new System.EventHandler(this.ReservationButton_Click);
             // 
             // RentalButton
             // 
