@@ -32,7 +32,6 @@
             this.DiscountText = new System.Windows.Forms.TextBox();
             this.AvailabiltyReportComboBox = new System.Windows.Forms.ComboBox();
             this.ReservationScreen = new System.Windows.Forms.Label();
-            this.ReturnButton = new System.Windows.Forms.Button();
             this.UpdateButton = new System.Windows.Forms.Button();
             this.CreateButton = new System.Windows.Forms.Button();
             this.ProductCategoryRateText = new System.Windows.Forms.TextBox();
@@ -53,6 +52,7 @@
             this.EstimatedArrivalTimeDatePicker = new System.Windows.Forms.DateTimePicker();
             this.EstimatedTermiantionTimeDatePicker = new System.Windows.Forms.DateTimePicker();
             this.ProductCategoryComboBox = new System.Windows.Forms.ComboBox();
+            this.ReturnButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // EstimatedTerminationTime
@@ -70,7 +70,7 @@
             // 
             this.DiscountText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DiscountText.Location = new System.Drawing.Point(384, 383);
-            this.DiscountText.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.DiscountText.Margin = new System.Windows.Forms.Padding(6);
             this.DiscountText.Name = "DiscountText";
             this.DiscountText.Size = new System.Drawing.Size(230, 35);
             this.DiscountText.TabIndex = 7;
@@ -80,7 +80,7 @@
             this.AvailabiltyReportComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AvailabiltyReportComboBox.FormattingEnabled = true;
             this.AvailabiltyReportComboBox.Location = new System.Drawing.Point(868, 62);
-            this.AvailabiltyReportComboBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.AvailabiltyReportComboBox.Margin = new System.Windows.Forms.Padding(6);
             this.AvailabiltyReportComboBox.Name = "AvailabiltyReportComboBox";
             this.AvailabiltyReportComboBox.Size = new System.Drawing.Size(114, 37);
             this.AvailabiltyReportComboBox.TabIndex = 2;
@@ -96,33 +96,18 @@
             this.ReservationScreen.TabIndex = 100;
             this.ReservationScreen.Text = "Reservation";
             // 
-            // ReturnButton
-            // 
-            this.ReturnButton.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.ReturnButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.ReturnButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ReturnButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReturnButton.ForeColor = System.Drawing.Color.Black;
-            this.ReturnButton.Location = new System.Drawing.Point(558, 652);
-            this.ReturnButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.ReturnButton.Name = "ReturnButton";
-            this.ReturnButton.Size = new System.Drawing.Size(164, 65);
-            this.ReturnButton.TabIndex = 13;
-            this.ReturnButton.Text = "&Return";
-            this.ReturnButton.UseVisualStyleBackColor = false;
-            // 
             // UpdateButton
             // 
             this.UpdateButton.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.UpdateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UpdateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UpdateButton.ForeColor = System.Drawing.Color.Black;
-            this.UpdateButton.Location = new System.Drawing.Point(296, 652);
-            this.UpdateButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.UpdateButton.Location = new System.Drawing.Point(817, 652);
+            this.UpdateButton.Margin = new System.Windows.Forms.Padding(6);
             this.UpdateButton.Name = "UpdateButton";
             this.UpdateButton.Size = new System.Drawing.Size(164, 65);
             this.UpdateButton.TabIndex = 12;
-            this.UpdateButton.Text = "&Update";
+            this.UpdateButton.Text = "&Save";
             this.UpdateButton.UseVisualStyleBackColor = false;
             // 
             // CreateButton
@@ -133,7 +118,7 @@
             this.CreateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreateButton.ForeColor = System.Drawing.Color.Black;
             this.CreateButton.Location = new System.Drawing.Point(34, 652);
-            this.CreateButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.CreateButton.Margin = new System.Windows.Forms.Padding(6);
             this.CreateButton.Name = "CreateButton";
             this.CreateButton.Size = new System.Drawing.Size(164, 65);
             this.CreateButton.TabIndex = 11;
@@ -144,7 +129,7 @@
             // 
             this.ProductCategoryRateText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProductCategoryRateText.Location = new System.Drawing.Point(384, 319);
-            this.ProductCategoryRateText.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ProductCategoryRateText.Margin = new System.Windows.Forms.Padding(6);
             this.ProductCategoryRateText.Name = "ProductCategoryRateText";
             this.ProductCategoryRateText.Size = new System.Drawing.Size(230, 35);
             this.ProductCategoryRateText.TabIndex = 6;
@@ -153,7 +138,7 @@
             // 
             this.DailyRateText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DailyRateText.Location = new System.Drawing.Point(384, 256);
-            this.DailyRateText.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.DailyRateText.Margin = new System.Windows.Forms.Padding(6);
             this.DailyRateText.Name = "DailyRateText";
             this.DailyRateText.Size = new System.Drawing.Size(230, 35);
             this.DailyRateText.TabIndex = 5;
@@ -162,7 +147,7 @@
             // 
             this.CustomerNameText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CustomerNameText.Location = new System.Drawing.Point(384, 131);
-            this.CustomerNameText.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.CustomerNameText.Margin = new System.Windows.Forms.Padding(6);
             this.CustomerNameText.Name = "CustomerNameText";
             this.CustomerNameText.Size = new System.Drawing.Size(230, 32);
             this.CustomerNameText.TabIndex = 3;
@@ -264,7 +249,7 @@
             // TotalPriceText
             // 
             this.TotalPriceText.Location = new System.Drawing.Point(384, 446);
-            this.TotalPriceText.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.TotalPriceText.Margin = new System.Windows.Forms.Padding(6);
             this.TotalPriceText.Name = "TotalPriceText";
             this.TotalPriceText.Size = new System.Drawing.Size(230, 31);
             this.TotalPriceText.TabIndex = 8;
@@ -273,7 +258,7 @@
             // 
             this.ReservationNumberText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReservationNumberText.Location = new System.Drawing.Point(384, 67);
-            this.ReservationNumberText.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ReservationNumberText.Margin = new System.Windows.Forms.Padding(6);
             this.ReservationNumberText.Name = "ReservationNumberText";
             this.ReservationNumberText.Size = new System.Drawing.Size(230, 35);
             this.ReservationNumberText.TabIndex = 1;
@@ -297,8 +282,8 @@
             this.StatusButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.StatusButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StatusButton.ForeColor = System.Drawing.Color.Black;
-            this.StatusButton.Location = new System.Drawing.Point(822, 652);
-            this.StatusButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.StatusButton.Location = new System.Drawing.Point(295, 652);
+            this.StatusButton.Margin = new System.Windows.Forms.Padding(6);
             this.StatusButton.Name = "StatusButton";
             this.StatusButton.Size = new System.Drawing.Size(164, 65);
             this.StatusButton.TabIndex = 14;
@@ -308,7 +293,7 @@
             // EstimatedArrivalTimeDatePicker
             // 
             this.EstimatedArrivalTimeDatePicker.Location = new System.Drawing.Point(380, 587);
-            this.EstimatedArrivalTimeDatePicker.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.EstimatedArrivalTimeDatePicker.Margin = new System.Windows.Forms.Padding(6);
             this.EstimatedArrivalTimeDatePicker.Name = "EstimatedArrivalTimeDatePicker";
             this.EstimatedArrivalTimeDatePicker.Size = new System.Drawing.Size(396, 31);
             this.EstimatedArrivalTimeDatePicker.TabIndex = 10;
@@ -316,7 +301,7 @@
             // EstimatedTermiantionTimeDatePicker
             // 
             this.EstimatedTermiantionTimeDatePicker.Location = new System.Drawing.Point(380, 521);
-            this.EstimatedTermiantionTimeDatePicker.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.EstimatedTermiantionTimeDatePicker.Margin = new System.Windows.Forms.Padding(6);
             this.EstimatedTermiantionTimeDatePicker.Name = "EstimatedTermiantionTimeDatePicker";
             this.EstimatedTermiantionTimeDatePicker.Size = new System.Drawing.Size(396, 31);
             this.EstimatedTermiantionTimeDatePicker.TabIndex = 9;
@@ -326,10 +311,26 @@
             this.ProductCategoryComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProductCategoryComboBox.FormattingEnabled = true;
             this.ProductCategoryComboBox.Location = new System.Drawing.Point(384, 192);
-            this.ProductCategoryComboBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ProductCategoryComboBox.Margin = new System.Windows.Forms.Padding(6);
             this.ProductCategoryComboBox.Name = "ProductCategoryComboBox";
             this.ProductCategoryComboBox.Size = new System.Drawing.Size(230, 37);
             this.ProductCategoryComboBox.TabIndex = 4;
+            // 
+            // ReturnButton
+            // 
+            this.ReturnButton.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.ReturnButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.ReturnButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ReturnButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReturnButton.ForeColor = System.Drawing.Color.Black;
+            this.ReturnButton.Location = new System.Drawing.Point(556, 652);
+            this.ReturnButton.Margin = new System.Windows.Forms.Padding(6);
+            this.ReturnButton.Name = "ReturnButton";
+            this.ReturnButton.Size = new System.Drawing.Size(164, 65);
+            this.ReturnButton.TabIndex = 13;
+            this.ReturnButton.Text = "&Generate";
+            this.ReturnButton.UseVisualStyleBackColor = false;
+            this.ReturnButton.Click += new System.EventHandler(this.ReturnButton_Click);
             // 
             // ReservationView
             // 
@@ -361,7 +362,7 @@
             this.Controls.Add(this.ProductCategory);
             this.Controls.Add(this.AvailabiltyReport);
             this.Controls.Add(this.CustomerName);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "ReservationView";
             this.Text = "Reservation";
             this.ResumeLayout(false);
@@ -374,7 +375,6 @@
         private System.Windows.Forms.TextBox DiscountText;
         private System.Windows.Forms.ComboBox AvailabiltyReportComboBox;
         private System.Windows.Forms.Label ReservationScreen;
-        private System.Windows.Forms.Button ReturnButton;
         private System.Windows.Forms.Button UpdateButton;
         private System.Windows.Forms.Button CreateButton;
         private System.Windows.Forms.TextBox ProductCategoryRateText;
@@ -395,5 +395,6 @@
         private System.Windows.Forms.DateTimePicker EstimatedArrivalTimeDatePicker;
         private System.Windows.Forms.DateTimePicker EstimatedTermiantionTimeDatePicker;
         private System.Windows.Forms.ComboBox ProductCategoryComboBox;
+        private System.Windows.Forms.Button ReturnButton;
     }
 }

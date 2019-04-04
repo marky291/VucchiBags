@@ -24,5 +24,11 @@ namespace VucchiBags.Customers
         public string PassportNumber { get; set; }
 
         public DateTime Birthdate { get; set; }
+
+        public string FullName {
+            get {
+                return $"{Forename} {Surname}";
+            }
+        }
     }
 }

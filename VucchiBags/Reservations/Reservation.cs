@@ -21,8 +21,16 @@ namespace VucchiBags.Reservations
 
         public decimal DailyRate { get; set; }
 
-        public decimal TotalPrice { get; set; }
-
         public int DiscountPercent { get; set; }
+
+        public decimal TotalPrice
+        {
+            get => NumberDaysReserved * DailyRate;
+        }
+
+        public int NumberDaysReserved
+        {
+            get => (int)ReturnDate.Date.Subtract(CollectDate.Date).TotalDays;
+        }
     }
 }
