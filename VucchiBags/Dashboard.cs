@@ -30,7 +30,7 @@ namespace VucchiBags
 
         private void ReservationButton_Click(object sender, EventArgs e)
         {
-            Form ReservationIndexForm = new ReservationIndex(ref this.storage);
+            Form ReservationIndexForm = new ReservationManagement(ref this.storage);
 
             ReservationIndexForm.Show();
         }

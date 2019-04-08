@@ -8,6 +8,9 @@ using VucchiBags.Rentals;
 
 namespace VucchiBags.Reservations
 {
+
+    enum ReservationStatus { Active, Cancelled, Suspended }
+
     [Serializable]
     class Reservation : Entity
     {
@@ -23,14 +26,13 @@ namespace VucchiBags.Reservations
 
         public int DiscountPercent { get; set; }
 
-        public decimal TotalPrice
-        {
-            get => NumberDaysReserved * DailyRate;
-        }
+        public decimal BalanceDue { get; set; }
 
-        public int NumberDaysReserved
-        {
-            get => (int)ReturnDate.Date.Subtract(CollectDate.Date).TotalDays;
-        }
+        public ReservationStatus Status { get; set; }
+
+        // @todo: this must include the discount percent
+        public decimal TotalPrice => NumberDaysReserved * DailyRate;
+
+        public int NumberDaysReserved => (int)ReturnDate.Date.Subtract(CollectDate.Date).TotalDays;
     }
 }

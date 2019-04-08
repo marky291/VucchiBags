@@ -16,7 +16,7 @@ namespace VucchiBags
     [Serializable]
     class FileStorage
     {
-        const string FILENAME = "storage.dat";
+        private const string Filename = "storage.dat";
 
         public List<Rental> Rentals = new List<Rental>();
         public List<Customer> Customers = new List<Customer>();
@@ -26,16 +26,16 @@ namespace VucchiBags
         // construct == load on entry
         public FileStorage()
         {
-            FileStream fs = new FileStream(FILENAME, FileMode.Open);
+            FileStream File = new FileStream(Filename, FileMode.Open);
 
             BinaryFormatter formatter = new BinaryFormatter();
 
-            if (fs.Length > 0)
+            if (File.Length > 0)
             {
                 // deserialize the stored data for reading back to object.
-                FileStorage Stored = (FileStorage)formatter.Deserialize(fs);
+                FileStorage Stored = (FileStorage)formatter.Deserialize(File);
 
-                Console.WriteLine($"Succesfully deserialized object from {FILENAME}!");
+                Console.WriteLine($@"Successfully deserialized object from {Filename}!");
 
                 // get the stored data back to class.
                 this.Customers = Stored.Customers;
@@ -44,32 +44,31 @@ namespace VucchiBags
                 this.Products = Stored.Products;
 
                 // feedback to the user what is loaded.
-                Console.WriteLine($"[Loaded] " +
-                    $"Customers: {Stored.Customers.Count}, " +
-                    $"Rentals: {Stored.Rentals.Count}, " +
-                    $"Reservations: {Stored.Reservations.Count}, " +
-                    $"Products: {Stored.Products.Count}"
+                Console.WriteLine($@"[Loaded] " +
+                    $@"Customers: {Stored.Customers.Count}, " +
+                    $@"Rentals: {Stored.Rentals.Count}, " +
+                    $@"Reservations: {Stored.Reservations.Count}, " +
+                    $@"Products: {Stored.Products.Count}"
                 );
-
+                
                 // destroy the stored data since we already used it.
                 Stored = null;
             }
 
-            fs.Close();
+            File.Close();
         }
 
         // destruct == save on exit
         ~FileStorage()
         {
-            FileStream fs = new FileStream("storage.dat", FileMode.Create);
+            var formatter = new BinaryFormatter();
 
-            BinaryFormatter formatter = new BinaryFormatter();
+            using (var stream = System.IO.File.Open(Filename, FileMode.Open, FileAccess.Write, FileShare.ReadWrite))
+            {
+                formatter.Serialize(stream, this);
 
-            formatter.Serialize(fs, this);
-
-            Console.WriteLine($"Succesfully serialized object to {FILENAME}!");
-
-            fs.Close();
+                Console.WriteLine($@"Successfully serialized object to {Filename}!");
+            }
         }
     }
 }

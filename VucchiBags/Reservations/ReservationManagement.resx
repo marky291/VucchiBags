@@ -117,47 +117,34 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAABDdJREFUSEutlG1ME2ccwJu9mX3YcHFsRhd5aauGGJNNBxtZJYvGYTIC0dFS5pxG
-        t/G+BLz0dRxVZlrYEDpasglYZLwqUAUOr732XnrttaW8tbRQYDMoMhg0DIZ8WsYOPDOyUCaG35f7cs/v
-        9+S5+z+szdJsdIVgNi8fpbw6s9VDIKTbTj+NmM1XbCR974Mo+gLz6uYxkO7DKDXYpDf2QBW3yPwrtahQ
-        UW1OvFpnOtPQTpXAeD+KUd4rENQbyix5ehDS8yEdsKgbLfL477C3a+0Pec4HC6dcE/Mfl1IPuCFfo9tz
-        SqGDtyBHNWobbOxAHTuZpf8PZPKwTdZBc+ENLCe62B6F+gMpIzOL4nuzS5L7gSVg4OFCorTdv5sFkK/E
-        AvpdDR1UFWrzlYHNzS8xio3B7V5lpZ76cY8EiWronUr0Ty1KR2cXJb8GlkTjgaVcz+TCSUA/tC8StOwJ
-        BR07Py2GojpNvQhi8SQwiuBA6MBbMO5GTpchCck69yFyLJBGB+SrgZkl0djMo7Qa58Sxg99aD7BBG4db
-        aNvNyoZerWnFAcw22MBogkNYvUebYJeRK0WiJW1+Hjka+ML72zzgn168ODz9KL2tbyopppiKiQT/Dbwm
-        coWoqrt4CDHQx2iCQ9h9QnWLwxIuwz8/ea0/4QY1kYL6Z8+ahmc+0xD3kz743hkXobC+uzYQBvZtz1Xf
-        2Q9j/V5GExyLY5ivbnHaIuRY3t4CMv1Qkf3MUXWPgFfSnbj/MnmcC+JH/hsIoQOSMijqqQK4dSi2prOn
-        JwpExRw6wCkgzkWCRAr7GzyRrbB+tF6ARR9RiQ4+Tn/kbkYTnFajY0cX4Taduoqpw0AyjVNgPce9ZE1h
-        KzYI0DNRf4dU0tOtZTQbQziGZJo2J8XNR7MjL5FnNwq8IaHeFJV3HLmL9eMw4Y1hFMEZGZlmj0/M4vbe
-        kTnwZ7KVk4+fDwct/PUCISI0XKhsj9bD3XcxypfLKIKTl5cXYTCYL98bn/zTYLb/3Y44f/+hhYJPFJlz
-        w+Ro0i6Z5VioDI99XYq/c0BqOJxfhZy/jbgw3O4rbGqyvcxo1kcmk7ErNBpjXV39cn2j/i/1tWZ/sfZm
-        Ie4YUrRj/VTVbSdc1GitVNaTpdoWqvImPStGixvGbEOpZRC0jdGsj1gs5mi1WqRGp1tWKZXLmVnZUxfS
-        AF52GbQNBJefM5EeNkENn8Ypr4K+XVX0cYgwavhEq9G3g1EERy4HuFptufmJPCMjfT45OTknLi7u2e/5
-        J9A736vRaNC1coHgk6wtkQMAsG+tPCsz8w8+n5+xZfLy8nJsVa56LBcIBOn00TzPvPLs/HS99r0VuW5V
-        rlrOzMyYEwqFX22JfIWxXyZGOzu7Hv8ttDw1VfDllslXmJwOXIRgYk4szZ+nd35hS+UruFyuFyuut8pA
-        VaU2Pj574wHZNCzWP/xIhV4iZF14AAAAAElFTkSuQmCC
-</value>
-  </data>
   <metadata name="ReservationNumber.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="CustomerName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="Status.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="ProductCategory.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Rate.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="RentalRate.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="NumberOfDays.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Price.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Payable.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="BalanceDue.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="CollectionDate.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ReturnDate.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
 </root>

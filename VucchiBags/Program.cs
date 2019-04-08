@@ -33,14 +33,12 @@ namespace VucchiBags
             Application.Run(new Dashboard(storage));
         }
 
-        static void ClearStorage()
+        static void ClearStorage(ref FileStorage fileStorage)
         {
-            FileStorage storage = new FileStorage();
-
-            storage.Customers.Clear();
-            storage.Rentals.Clear();
-            storage.Reservations.Clear();
-            storage.Products.Clear();
+            fileStorage.Customers.Clear();
+            fileStorage.Rentals.Clear();
+            fileStorage.Reservations.Clear();
+            fileStorage.Products.Clear();
 
             return;
         }
@@ -51,7 +49,7 @@ namespace VucchiBags
             Random random = new Random();
 
             // clear current storage in case one exists.
-            ClearStorage();
+            ClearStorage(ref fileStorage);
 
             // generate connected object data.
 

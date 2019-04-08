@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>7.1</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>7.1</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bogus, Version=26.0.2.0, Culture=neutral, PublicKeyToken=fa1bb3f3f218129a, processorArchitecture=MSIL">
@@ -65,11 +67,12 @@
     <Compile Include="FileStorage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Reservations\ReservationIndex.cs">
+    <Compile Include="Reservations\ReservationGridRow.cs" />
+    <Compile Include="Reservations\ReservationManagement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reservations\ReservationIndex.designer.cs">
-      <DependentUpon>ReservationIndex.cs</DependentUpon>
+    <Compile Include="Reservations\ReservationManagement.designer.cs">
+      <DependentUpon>ReservationManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="Reservations\ReservationView.cs">
       <SubType>Form</SubType>
@@ -91,8 +94,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Reservations\ReservationIndex.resx">
-      <DependentUpon>ReservationIndex.cs</DependentUpon>
+    <EmbeddedResource Include="Reservations\ReservationManagement.resx">
+      <DependentUpon>ReservationManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reservations\ReservationView.resx">
       <DependentUpon>ReservationView.cs</DependentUpon>
