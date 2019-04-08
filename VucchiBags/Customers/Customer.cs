@@ -9,7 +9,7 @@ namespace VucchiBags.Customers
     enum CustomerRating {  Blacklisted, Regular, Dodgey }
 
     [Serializable]
-    class Customer : Entity
+    internal class Customer : Entity
     {
         public CustomerRating Rating { get; set; }
 

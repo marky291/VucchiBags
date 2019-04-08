@@ -6,19 +6,15 @@ using System.Threading.Tasks;
 using Bogus;
 using VucchiBags.Customers;
 using VucchiBags.Products;
+using VucchiBags.Reservations;
 
 namespace VucchiBags.Rentals
 {
     class FakeRental : Faker<Rental>
     {
-        public FakeRental(Customer customer, Product product)
+        public FakeRental(Reservation reservation)
         {
-            RuleFor(o => o.CustomerID, f => customer.Id);
-            RuleFor(o => o.ProductID, f => product.Id);
-            RuleFor(o => o.DailyRate, f => f.Random.Decimal(0, 200));
-            RuleFor(o => o.ETA, f => f.Date.Soon());
-            RuleFor(o => o.ETT, f => f.Date.Past());
-            RuleFor(o => o.TotalPrice, f => f.Random.Decimal(0, 200));
+            RuleFor(o => o.ReservationID, f => reservation.Id);
         }
     }
 }

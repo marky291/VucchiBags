@@ -65,30 +65,27 @@ namespace VucchiBags
                 fileStorage.Products.Add(new FakeProduct());
             }
 
-            // lets make a random number of rentals.
-            for (int i = 0; i < random.Next(25, 100); i++)
-            {
-                // a rental needs a random customer.
-                Customer Customer = fileStorage.Customers.ElementAt(random.Next(1, fileStorage.Customers.Count()));
-
-                // a rental needs a random product.
-                Product Product = fileStorage.Products.ElementAt(random.Next(1, fileStorage.Products.Count()));
-
-                // create the rental
-                fileStorage.Rentals.Add(new FakeRental(Customer, Product));
-            }
-
             // lets make a random number of reservation.
             for (int i = 0; i < random.Next(25, 100); i++)
             {
-                // a rental needs a random customer.
+                // a reservation needs a random customer.
                 Customer Customer = fileStorage.Customers.ElementAt(random.Next(1, fileStorage.Customers.Count()));
 
-                // a rental needs a random product.
-                Rental Rental = fileStorage.Rentals.ElementAt(random.Next(1, fileStorage.Rentals.Count()));
+                // a reservation needs a random product.
+                Product product = fileStorage.Products.ElementAt(random.Next(1, fileStorage.Products.Count()));
 
                 // create the rental
-                fileStorage.Reservations.Add(new FakeReservation(Rental, Customer));
+                fileStorage.Reservations.Add(new FakeReservation(product, Customer));
+            }
+
+            // lets make a random number of rentals.
+            for (int i = 0; i < random.Next(25, 100); i++)
+            {
+                // a rental needs a random product.
+                Reservation Reservation = fileStorage.Reservations.ElementAt(random.Next(1, fileStorage.Reservations.Count()));
+
+                // create the rental
+                fileStorage.Rentals.Add(new FakeRental(Reservation));
             }
         }
     }

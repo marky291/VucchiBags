@@ -14,7 +14,7 @@ namespace VucchiBags.Customers
         {
             RuleFor(o => o.Forename, f => f.Name.FirstName());
             RuleFor(o => o.Surname, f => f.Name.LastName());
-            RuleFor(o => o.Address, f => f.Address.FullAddress());
+            RuleFor(o => o.Address, f => f.Address.StreetAddress());
             RuleFor(o => o.Birthdate, f => f.Date.Past());
             RuleFor(o => o.Rating, f => f.Random.Enum<CustomerRating>());
             RuleFor(o => o.PhoneNumber, f => f.Phone.PhoneNumber());

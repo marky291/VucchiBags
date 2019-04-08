@@ -8,7 +8,7 @@ namespace VucchiBags.Products
 {
     enum ProductStatus { Rented, Available, Damaged }
 
-    enum ProductCategory { Bag, Belts, Shoes }
+    enum ProductCategory { Economy, Standard, Luxury, Special }
 
     enum ProductBrand { Nike, Addidas }
 
@@ -26,5 +26,24 @@ namespace VucchiBags.Products
         public string LongDescription { get; set; }
 
         public decimal Value { get; set; }
+
+
+        public int DailyRateAddedEuros()
+        {
+            switch (Category)
+            {
+                case ProductCategory.Economy:
+                    return 10;
+                case ProductCategory.Standard:
+                    return 20;
+                case ProductCategory.Luxury:
+                    return 30;
+                case ProductCategory.Special:
+                    return 40;
+
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
+        }
     }
 }

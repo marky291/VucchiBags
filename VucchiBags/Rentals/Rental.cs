@@ -9,16 +9,9 @@ namespace VucchiBags.Rentals
     [Serializable]
     class Rental : Entity
     {
-        public int CustomerID { get; set; }
-
-        public int ProductID { get; set; }
-
-        public decimal DailyRate { get; set; }
-
-        public DateTime ETA { get; set; }
-
-        public DateTime ETT { get; set; }
-
-        public decimal TotalPrice { get; set; }
+        // reservation holds customers and products.
+        // this allows lookups and access to those 
+        // attributes belonging to those models
+        public int ReservationID { get; set; }
     }
 }

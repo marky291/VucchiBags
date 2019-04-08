@@ -23,6 +23,8 @@ namespace VucchiBags.Reservations
 
         private readonly DataGridView _grid;
 
+        private readonly Dashboard _dashboardForm;
+
         private enum ReservationFilters { Future, Current, Past, All }
 
         /**
@@ -30,11 +32,13 @@ namespace VucchiBags.Reservations
          * reservations, we also accept the file storage which holds and saves all data
          * related to this application.
          */
-        public ReservationManagement(ref FileStorage fileStorage)
+        public ReservationManagement(Dashboard dashboardForm, FileStorage fileStorage)
         {
             InitializeComponent();
 
             _fileStorage = fileStorage;
+
+            _dashboardForm = dashboardForm;
 
             _grid = ReservationsGrid;
 
@@ -62,6 +66,8 @@ namespace VucchiBags.Reservations
         {
             var Query = sender as TextBox;
 
+            Debug.Assert(Query != null, nameof(Query) + " != null");
+
             if (Query.Text.Length != 0)
             {
                 GenerateReservationGridUsing("Searched", _fileStorage.Reservations.Where(x => x.Id.ToString().Contains(Query.Text)).ToList());
@@ -70,6 +76,16 @@ namespace VucchiBags.Reservations
             }
 
             ReservationFilterList.SelectedIndex = (int)ReservationFilters.Future;
+        }
+
+        /**
+         * When we close the management form we want to
+         * show the currently hidden dashboardForm screen
+         * since that exists in memory still and is just hidden.
+         */
+        private void ReservationManagement_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            _dashboardForm.Show();
         }
 
         /**
@@ -84,8 +100,7 @@ namespace VucchiBags.Reservations
             reservations.ForEach(reservation =>
             {
                 Customer customer = _fileStorage.Customers.First(x => x.Id == reservation.CustomerID);
-                Rental rental = _fileStorage.Rentals.First(x => x.Id == reservation.RentalID);
-                Product product = _fileStorage.Products.First(x => x.Id == rental.ProductID);
+                Product product = _fileStorage.Products.First(x => x.Id == reservation.ProductID);
 
                 // Add this reservation and its associated objects to the grid.
                 _grid.Rows.Add(
@@ -93,12 +108,12 @@ namespace VucchiBags.Reservations
                     customer.FullName.ToString(), // Customer name
                     reservation.Status, // Reservation Status
                     product.Category.ToString(), // Product Category
-                    "$" + reservation.DailyRate.ToString("#.##"), // Rental Rate)
-                    reservation.NumberDaysReserved, // Days Reserved (No. Days
-                    "$" + reservation.TotalPrice.ToString("#.##"), // Payment Amount
-                    "$" + reservation.BalanceDue.ToString("#.##"),// Payment due
+                    "$" + product.DailyRateAddedEuros().ToString("#.##"), // Rental Rate)
+                    reservation.NumberDaysReserved(), // Days Reserved (No. Days
+                    "$" + reservation.TotalPriceOf(product).ToString("#.##"), // Payment Amount
+                    "$" + reservation.BalanceDueOn(product).ToString("#.##"),// Payment due
                     reservation.CollectDate.ToShortDateString(), // collection date
-                    reservation.ReturnDate.ToShortDateString() // return date
+                    reservation. ReturnDate.ToShortDateString() // return date
                 );
             });
 
@@ -133,5 +148,33 @@ namespace VucchiBags.Reservations
                     break;
             }
         }
+
+        private void CreateBookingForm_Click(object sender, EventArgs e)
+        {
+            ReservationEditor editor = new ReservationEditor(this, _fileStorage, new Reservation());
+
+            editor.Show();
+
+            this.Hide();
+        }
+
+        private void ViewButton_Click(object sender, EventArgs e)
+        {
+            int reservationId = Convert.ToInt32(ReservationsGrid.Rows[ReservationsGrid.SelectedRows[0].Index].Cells[0].Value.ToString());
+
+            Reservation reservation = _fileStorage.Reservations.First(x => x.Id == reservationId);
+
+            ReservationEditor editor = new ReservationEditor(this, _fileStorage, reservation);
+
+            editor.Show();
+
+            this.Hide();
+        }
+
+        private void ReservationsGrid_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            ViewButton_Click(this, EventArgs.Empty);
+        }
     }
 }
+;
