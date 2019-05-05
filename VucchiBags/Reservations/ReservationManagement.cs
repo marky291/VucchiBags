@@ -175,6 +175,13 @@ namespace VucchiBags.Reservations
         {
             ViewButton_Click(this, EventArgs.Empty);
         }
+
+        private void AnalysisReportButton_Click(object sender, EventArgs e)
+        {
+            ReservationAnalysis ReservationAnalysis = new ReservationAnalysis(_fileStorage);
+
+            ReservationAnalysis.Show();
+        }
     }
 }
 ;

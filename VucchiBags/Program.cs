@@ -66,7 +66,7 @@ namespace VucchiBags
             }
 
             // lets make a random number of reservation.
-            for (int i = 0; i < random.Next(25, 100); i++)
+            for (int i = 0; i < random.Next(300, 500); i++)
             {
                 // a reservation needs a random customer.
                 Customer Customer = fileStorage.Customers.ElementAt(random.Next(1, fileStorage.Customers.Count()));

@@ -40,6 +40,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -67,6 +68,12 @@
     <Compile Include="FileStorage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reservations\ReservationAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reservations\ReservationAnalysis.Designer.cs">
+      <DependentUpon>ReservationAnalysis.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reservations\ReservationManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +100,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Reservations\ReservationAnalysis.resx">
+      <DependentUpon>ReservationAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reservations\ReservationManagement.resx">
       <DependentUpon>ReservationManagement.cs</DependentUpon>
     </EmbeddedResource>

@@ -16,7 +16,7 @@ namespace VucchiBags.Reservations
         public FakeReservation(Product Product, Customer Customer)
         {
 
-            DateTime CollectDate = FakerHub.Date.Between(DateTime.Now.AddYears(-1), DateTime.Now.AddYears(1));
+            DateTime CollectDate = FakerHub.Date.Between(DateTime.Now.AddYears(-5), DateTime.Now.AddYears(5));
             DateTime ReturnDate = CollectDate.AddDays(FakerHub.Random.Number(0, 30));
 
             RuleFor(o => o.CustomerID, f => Customer.Id);

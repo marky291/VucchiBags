@@ -56,9 +56,10 @@
             // 
             // SearchBarInput
             // 
-            this.SearchBarInput.Location = new System.Drawing.Point(162, 56);
+            this.SearchBarInput.Location = new System.Drawing.Point(324, 108);
+            this.SearchBarInput.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.SearchBarInput.Name = "SearchBarInput";
-            this.SearchBarInput.Size = new System.Drawing.Size(838, 20);
+            this.SearchBarInput.Size = new System.Drawing.Size(1672, 31);
             this.SearchBarInput.TabIndex = 2;
             this.SearchBarInput.TextChanged += new System.EventHandler(this.SearchBarInput_TextChanged);
             // 
@@ -66,9 +67,10 @@
             // 
             this.ManageReservationsLabel.AutoSize = true;
             this.ManageReservationsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ManageReservationsLabel.Location = new System.Drawing.Point(8, 16);
+            this.ManageReservationsLabel.Location = new System.Drawing.Point(16, 31);
+            this.ManageReservationsLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.ManageReservationsLabel.Name = "ManageReservationsLabel";
-            this.ManageReservationsLabel.Size = new System.Drawing.Size(192, 24);
+            this.ManageReservationsLabel.Size = new System.Drawing.Size(389, 44);
             this.ManageReservationsLabel.TabIndex = 47;
             this.ManageReservationsLabel.Text = "Manage Reservations";
             // 
@@ -78,9 +80,10 @@
             this.DeleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DeleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DeleteButton.ForeColor = System.Drawing.Color.Black;
-            this.DeleteButton.Location = new System.Drawing.Point(368, 541);
+            this.DeleteButton.Location = new System.Drawing.Point(736, 1040);
+            this.DeleteButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(150, 33);
+            this.DeleteButton.Size = new System.Drawing.Size(300, 63);
             this.DeleteButton.TabIndex = 5;
             this.DeleteButton.Text = "No Row Selected";
             this.DeleteButton.UseVisualStyleBackColor = false;
@@ -91,9 +94,10 @@
             this.ViewButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ViewButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ViewButton.ForeColor = System.Drawing.Color.Black;
-            this.ViewButton.Location = new System.Drawing.Point(190, 541);
+            this.ViewButton.Location = new System.Drawing.Point(380, 1040);
+            this.ViewButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.ViewButton.Name = "ViewButton";
-            this.ViewButton.Size = new System.Drawing.Size(150, 33);
+            this.ViewButton.Size = new System.Drawing.Size(300, 63);
             this.ViewButton.TabIndex = 4;
             this.ViewButton.Text = "&View / Modify";
             this.ViewButton.UseVisualStyleBackColor = false;
@@ -105,9 +109,10 @@
             this.CreateBookingButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CreateBookingButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreateBookingButton.ForeColor = System.Drawing.Color.Black;
-            this.CreateBookingButton.Location = new System.Drawing.Point(12, 541);
+            this.CreateBookingButton.Location = new System.Drawing.Point(24, 1040);
+            this.CreateBookingButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.CreateBookingButton.Name = "CreateBookingButton";
-            this.CreateBookingButton.Size = new System.Drawing.Size(150, 33);
+            this.CreateBookingButton.Size = new System.Drawing.Size(300, 63);
             this.CreateBookingButton.TabIndex = 3;
             this.CreateBookingButton.Text = "&Create Booking";
             this.CreateBookingButton.UseVisualStyleBackColor = false;
@@ -136,14 +141,15 @@
             this.CollectionDate,
             this.ReturnDate});
             this.ReservationsGrid.GridColor = System.Drawing.SystemColors.Control;
-            this.ReservationsGrid.Location = new System.Drawing.Point(12, 91);
+            this.ReservationsGrid.Location = new System.Drawing.Point(24, 175);
+            this.ReservationsGrid.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.ReservationsGrid.MultiSelect = false;
             this.ReservationsGrid.Name = "ReservationsGrid";
             this.ReservationsGrid.ReadOnly = true;
             this.ReservationsGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.ReservationsGrid.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.ReservationsGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ReservationsGrid.Size = new System.Drawing.Size(988, 433);
+            this.ReservationsGrid.Size = new System.Drawing.Size(1976, 833);
             this.ReservationsGrid.TabIndex = 42;
             this.ReservationsGrid.TabStop = false;
             this.ReservationsGrid.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ReservationsGrid_CellContentDoubleClick);
@@ -238,9 +244,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 59);
+            this.label1.Location = new System.Drawing.Point(24, 113);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(144, 13);
+            this.label1.Size = new System.Drawing.Size(288, 25);
             this.label1.TabIndex = 48;
             this.label1.Text = "Search Reservation Number:";
             // 
@@ -248,21 +255,24 @@
             // 
             this.AnalysisReportButton.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.AnalysisReportButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AnalysisReportButton.Location = new System.Drawing.Point(870, 16);
+            this.AnalysisReportButton.Location = new System.Drawing.Point(1740, 31);
+            this.AnalysisReportButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.AnalysisReportButton.Name = "AnalysisReportButton";
-            this.AnalysisReportButton.Size = new System.Drawing.Size(130, 23);
+            this.AnalysisReportButton.Size = new System.Drawing.Size(260, 44);
             this.AnalysisReportButton.TabIndex = 50;
             this.AnalysisReportButton.Text = "Analysis Report";
             this.AnalysisReportButton.UseVisualStyleBackColor = false;
+            this.AnalysisReportButton.Click += new System.EventHandler(this.AnalysisReportButton_Click);
             // 
             // ReservationsShowingCounterLabel
             // 
             this.ReservationsShowingCounterLabel.AutoSize = true;
             this.ReservationsShowingCounterLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReservationsShowingCounterLabel.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.ReservationsShowingCounterLabel.Location = new System.Drawing.Point(876, 588);
+            this.ReservationsShowingCounterLabel.Location = new System.Drawing.Point(1752, 1131);
+            this.ReservationsShowingCounterLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.ReservationsShowingCounterLabel.Name = "ReservationsShowingCounterLabel";
-            this.ReservationsShowingCounterLabel.Size = new System.Drawing.Size(123, 13);
+            this.ReservationsShowingCounterLabel.Size = new System.Drawing.Size(250, 26);
             this.ReservationsShowingCounterLabel.TabIndex = 51;
             this.ReservationsShowingCounterLabel.Text = "Showing 00 reservations";
             // 
@@ -270,9 +280,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(12, 588);
+            this.label2.Location = new System.Drawing.Point(24, 1131);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(273, 13);
+            this.label2.Size = new System.Drawing.Size(549, 25);
             this.label2.TabIndex = 52;
             this.label2.Text = "Created by K0023328 for LIT, Applications Development";
             // 
@@ -281,9 +292,10 @@
             this.ReservationFilterList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ReservationFilterList.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.ReservationFilterList.FormattingEnabled = true;
-            this.ReservationFilterList.Location = new System.Drawing.Point(740, 545);
+            this.ReservationFilterList.Location = new System.Drawing.Point(1480, 1048);
+            this.ReservationFilterList.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.ReservationFilterList.Name = "ReservationFilterList";
-            this.ReservationFilterList.Size = new System.Drawing.Size(260, 24);
+            this.ReservationFilterList.Size = new System.Drawing.Size(516, 39);
             this.ReservationFilterList.TabIndex = 54;
             this.ReservationFilterList.SelectedIndexChanged += new System.EventHandler(this.ReservationFilter_SelectedIndexChanged);
             // 
@@ -291,18 +303,19 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(691, 550);
+            this.label3.Location = new System.Drawing.Point(1382, 1058);
+            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 16);
+            this.label3.Size = new System.Drawing.Size(83, 30);
             this.label3.TabIndex = 55;
             this.label3.Text = "View: ";
             // 
             // ReservationManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1013, 615);
+            this.ClientSize = new System.Drawing.Size(2026, 1183);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.ReservationFilterList);
             this.Controls.Add(this.label2);
@@ -315,6 +328,7 @@
             this.Controls.Add(this.ViewButton);
             this.Controls.Add(this.CreateBookingButton);
             this.Controls.Add(this.ReservationsGrid);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "ReservationManagement";
             this.Text = "ReservationManagement";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ReservationManagement_FormClosed);
