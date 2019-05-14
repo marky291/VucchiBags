@@ -13,20 +13,16 @@ namespace VucchiBags.Reservations
 {
     internal partial class ReservationAnalysis : Form
     {
-        private readonly ReservationManagement _previousFrom;
-
         private readonly FileStorage _storage;
 
         public ReservationAnalysis(FileStorage storage)
         {
-            //_previousFrom = previousFrom;
             _storage = storage;
             InitializeComponent();
-
-            CreateChartDataForFiveYears();
+            CreateChartDataForTenYears();
         }
 
-        private void CreateChartDataForFiveYears()
+        private void CreateChartDataForTenYears()
         {
             for (int i = 0; i < 10; i++)
             {

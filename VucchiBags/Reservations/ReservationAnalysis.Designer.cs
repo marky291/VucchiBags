@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.AnalysisChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.ManageReservationsLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.AnalysisChart)).BeginInit();
@@ -38,20 +38,20 @@
             // 
             // AnalysisChart
             // 
-            chartArea2.Name = "ChartArea1";
-            this.AnalysisChart.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.AnalysisChart.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.AnalysisChart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.AnalysisChart.Legends.Add(legend1);
             this.AnalysisChart.Location = new System.Drawing.Point(36, 103);
             this.AnalysisChart.Name = "AnalysisChart";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Area;
-            series2.Legend = "Legend1";
-            series2.Name = "test";
-            series2.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Single;
-            series2.YValuesPerPoint = 3;
-            series2.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Single;
-            this.AnalysisChart.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Area;
+            series1.Legend = "Legend1";
+            series1.Name = "test";
+            series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Single;
+            series1.YValuesPerPoint = 3;
+            series1.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Single;
+            this.AnalysisChart.Series.Add(series1);
             this.AnalysisChart.Size = new System.Drawing.Size(1603, 822);
             this.AnalysisChart.TabIndex = 0;
             this.AnalysisChart.Text = "chart1";
